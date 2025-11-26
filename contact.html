@@ -29,6 +29,11 @@
                 <div class="logo">HP</div>
                 <span class="brand-name">Herd Mind Paws</span>
             </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="nav-menu">
                 <a href="index.html#home" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About Us</a>
@@ -59,12 +64,40 @@
         </div>
     </nav>
 
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav">
+        <div class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="available-puppies.html">Our Puppies</a>
+            <a href="reviews.html">Testimonials</a>
+            <button class="mobile-dropdown-btn">
+                Useful Info
+                <span class="mobile-dropdown-arrow">▼</span>
+            </button>
+            <div class="mobile-dropdown-content">
+                <a href="faqs.html">FAQs</a>
+                <a href="about-breed.html">About The Breed</a>
+                <a href="basic-care.html">Basic Care</a>
+                <a href="health-guarantee.html">Health Guarantee</a>
+                <a href="pickup-delivery.html">Pickup & Delivery</a>
+                <a href="return-refund.html">Return & Refund</a>
+                <a href="vaccinations.html">Vaccinations</a>
+                <a href="sales-agreement.html">Sales Agreement</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+            <button class="cta-button" onclick="window.location.href='mailto:info@Herdmindpaws.com?subject=Herd Mind Paws Inquiry'">Inquire Now</button>
+        </div>
+    </div>
+
     <!-- Contact Form -->
     <main class="contact-page">
         <div class="container">
             <div class="contact-page-grid">
                 <form class="contact-form-page web3form" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="2b7794b2-ad87-44fd-b8b2-81f94982f768">
+                    <input type="hidden" name="access_key" value="a7d987c7-2959-44f1-9b8c-dd85618ea462">
                     <input type="hidden" name="formName" value="Contact Page">
                     <input type="hidden" name="subject" value="Herd Mind Paws Contact Form">
                     <input type="hidden" name="from_name" value="Herd Mind Paws Website">
@@ -113,12 +146,10 @@
                     <h1>Contact Us</h1>
                     <p>Tell us about yourself and which puppy you love. We'll get back within 24 hours with next steps, pickup options, and health records.</p>
                     <div class="contact-card">
-                        <p class="contact-label">Phone</p>
-                        <p class="contact-value">+1 (555) 123-4567</p>
                         <p class="contact-label">Email</p>
                         <p class="contact-value">info@Herdmindpaws.com</p>
                         <p class="contact-label">Pickup Location</p>
-                        <p class="contact-value">123 Breeder Lane, Rural Area, ST 12345</p>
+                        <p class="contact-value">We operate as a family-based home breeder, so for the safety and privacy of our family and puppies, we do not publicly list our address. Once you contact us, we'll gladly share our exact location and arrange a convenient visit.</p>
                     </div>
                 </div>
             </div>
@@ -179,9 +210,7 @@
                     <h4>Contact Info</h4>
                     <ul>
                         <li>info@Herdmindpaws.com</li>
-                        <li>(555) 123-4567</li>
-                        <li>123 Breeder Lane</li>
-                        <li>Rural Area, ST 12345</li>
+                        <li>Address shared upon inquiry</li>
                     </ul>
                 </div>
             </div>

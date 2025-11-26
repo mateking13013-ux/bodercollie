@@ -36,7 +36,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const formData = new FormData(form);
             if (!formData.get('access_key')) {
-                formData.set('access_key', '2b7794b2-ad87-44fd-b8b2-81f94982f768');
+                formData.set('access_key', 'a7d987c7-2959-44f1-9b8c-dd85618ea462');
+            }
+
+            // Set reply-to as the sender's email
+            const senderEmail = formData.get('email');
+            if (senderEmail) {
+                formData.set('replyto', senderEmail);
             }
 
             try {
@@ -78,15 +84,56 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Mobile menu toggle (if needed for future mobile menu)
+    // Mobile menu toggle
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    
-    if (mobileMenuToggle && mobileMenu) {
+    const mobileNav = document.querySelector('.mobile-nav');
+    const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
+
+    function closeMobileMenu() {
+        mobileMenuToggle?.classList.remove('active');
+        mobileNav?.classList.remove('active');
+        mobileNavOverlay?.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    function openMobileMenu() {
+        mobileMenuToggle?.classList.add('active');
+        mobileNav?.classList.add('active');
+        mobileNavOverlay?.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    if (mobileMenuToggle) {
         mobileMenuToggle.addEventListener('click', function() {
-            mobileMenu.classList.toggle('active');
+            if (mobileNav?.classList.contains('active')) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
         });
     }
+
+    if (mobileNavOverlay) {
+        mobileNavOverlay.addEventListener('click', closeMobileMenu);
+    }
+
+    // Close mobile menu when clicking a link
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Mobile dropdown toggle
+    const mobileDropdownBtns = document.querySelectorAll('.mobile-dropdown-btn');
+    mobileDropdownBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            this.classList.toggle('active');
+            const content = this.nextElementSibling;
+            if (content) {
+                content.classList.toggle('active');
+            }
+        });
+    });
 
     // Add active state to navigation based on scroll position
     window.addEventListener('scroll', function() {
