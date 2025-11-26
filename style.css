@@ -6,34 +6,34 @@
 }
 
 :root {
-    /* Coffee Theme - Warm, rich espresso tones */
-    --primary: #6F4E37;           /* Rich coffee brown */
-    --primary-dark: #4A3728;      /* Dark roast */
-    --accent: #C4A77D;            /* Caramel/latte */
-    --ink: #2C1810;               /* Dark espresso text */
-    --muted: #6B5B4F;             /* Medium roast */
+    /* Forest Green Theme - Natural, earthy forest tones */
+    --primary: #2D5A27;           /* Forest green */
+    --primary-dark: #1E3E1A;      /* Dark forest */
+    --accent: #7CB342;            /* Light leaf green */
+    --ink: #1A2E1A;               /* Deep forest text */
+    --muted: #4A6741;             /* Muted sage */
     /* Theme tokens for easy retheming */
-    --cream: #FDF8F3;             /* Light cream */
-    --soft-cream: #FAF5EF;        /* Soft latte foam */
+    --cream: #F5FAF4;             /* Light mint cream */
+    --soft-cream: #EEF7ED;        /* Soft green foam */
     --card: #ffffff;
     --surface: #ffffff;
-    --surface-soft: #FDF8F3;
-    --surface-tint: #F5EBE0;      /* Warm beige */
-    --surface-muted: #FAF5EF;
-    --border: #E8DDD4;            /* Light mocha border */
-    --border-strong: #3D2B1F;     /* Dark coffee border */
-    --text-subtle: #8B7355;       /* Muted coffee */
-    --text-highlight: #FDF8F3;
-    --accent-soft: #E8DDD4;       /* Soft mocha */
-    --accent-rose: #F5EBE0;
-    --gradient-rose: #F5EBE0;
-    --gradient-gold: #EDE0D4;     /* Warm cream gradient */
-    --gradient-warm-start: #FDF8F3;
-    --gradient-warm-mid: #F5EBE0;
-    --bg-warm: #FDF8F3;
-    --table-header: #F5EBE0;
-    --table-total: #FDF8F3;
-    --shadow: 0 12px 35px rgba(44, 24, 16, 0.1);
+    --surface-soft: #F5FAF4;
+    --surface-tint: #E8F5E6;      /* Light forest tint */
+    --surface-muted: #EEF7ED;
+    --border: #D4E5D1;            /* Light sage border */
+    --border-strong: #2D5A27;     /* Forest green border */
+    --text-subtle: #5D7955;       /* Muted forest */
+    --text-highlight: #F5FAF4;
+    --accent-soft: #D4E5D1;       /* Soft sage */
+    --accent-rose: #E8F5E6;
+    --gradient-rose: #E8F5E6;
+    --gradient-gold: #DEF0DB;     /* Light green gradient */
+    --gradient-warm-start: #F5FAF4;
+    --gradient-warm-mid: #E8F5E6;
+    --bg-warm: #F5FAF4;
+    --table-header: #E8F5E6;
+    --table-total: #F5FAF4;
+    --shadow: 0 12px 35px rgba(26, 46, 26, 0.1);
 }
 
 body {
@@ -278,7 +278,7 @@ body {
 
 .badge {
     display: inline-block;
-    background: #e0f7fa;
+    background: #E8F5E6;
     color: var(--primary);
     padding: 4px 12px;
     border-radius: 12px;
@@ -445,7 +445,7 @@ body {
 
 .pill {
     display: inline-flex;
-    background: #e0f7fa;
+    background: #E8F5E6;
     color: var(--primary);
     padding: 8px 14px;
     border-radius: 999px;
@@ -880,7 +880,7 @@ body {
 }
 
 .stat-card {
-    background: #f0fdfa;
+    background: #F0F7EE;
     border: 1px solid var(--border);
     border-radius: 10px;
     padding: 14px;
@@ -954,7 +954,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    background: #e9f7ff;
+    background: #E6F5E4;
     color: #0f6cc7;
     padding: 6px 12px;
     border-radius: 999px;
@@ -964,7 +964,7 @@ body {
 /* Features Section */
 .features {
     padding: 64px 20px;
-    background: #f0fdfa;
+    background: #F0F7EE;
 }
 
 .features-grid {
@@ -1061,7 +1061,7 @@ body {
     position: absolute;
     top: 14px;
     left: 14px;
-    background: rgba(8, 145, 178, 0.9);
+    background: rgba(45, 90, 39, 0.9);
     color: white;
     padding: 6px 12px;
     border-radius: 999px;
@@ -1098,7 +1098,7 @@ body {
 }
 
 .price-tag {
-    background: #e0f7fa;
+    background: #E8F5E6;
     color: var(--primary);
     padding: 8px 12px;
     border-radius: 10px;
@@ -1466,7 +1466,7 @@ body {
 /* Blog Section */
 .blog {
     padding: 80px 20px;
-    background: #f0fdfa;
+    background: #F0F7EE;
 }
 
 .blog-grid {
@@ -1515,7 +1515,7 @@ body {
 }
 
 .blog-date {
-    background: #e0f7fa;
+    background: #E8F5E6;
     color: var(--primary);
     padding: 4px 8px;
     border-radius: 4px;
@@ -1922,7 +1922,7 @@ body {
 
 /* Footer */
 .footer {
-    background: linear-gradient(135deg, #1f2030 0%, #1a0f1d 55%, #2a0c18 100%);
+    background: linear-gradient(135deg, #1A2E1A 0%, #0F1F0E 55%, #162815 100%);
     color: white;
     padding: 48px 20px 24px;
 }
