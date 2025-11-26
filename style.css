@@ -6,33 +6,34 @@
 }
 
 :root {
-    --primary: #0891b2;
-    --primary-dark: #0e7490;
-    --accent: #fb923c;
-    --ink: #1f2937;
-    --muted: #62646d;
+    /* Coffee Theme - Warm, rich espresso tones */
+    --primary: #6F4E37;           /* Rich coffee brown */
+    --primary-dark: #4A3728;      /* Dark roast */
+    --accent: #C4A77D;            /* Caramel/latte */
+    --ink: #2C1810;               /* Dark espresso text */
+    --muted: #6B5B4F;             /* Medium roast */
     /* Theme tokens for easy retheming */
-    --cream: #f0fdfa;
-    --soft-cream: #f5fffe;
+    --cream: #FDF8F3;             /* Light cream */
+    --soft-cream: #FAF5EF;        /* Soft latte foam */
     --card: #ffffff;
     --surface: #ffffff;
-    --surface-soft: #f0fdfa;
-    --surface-tint: #ecfeff;
-    --surface-muted: #f8fffd;
-    --border: #e0f2f1;
-    --border-strong: #334155;
-    --text-subtle: #94a3b8;
-    --text-highlight: #e0f7fa;
-    --accent-soft: #fed7aa;
-    --accent-rose: #fef3c7;
-    --gradient-rose: #e0f7fa;
-    --gradient-gold: #ffedd5;
-    --gradient-warm-start: #ecfeff;
-    --gradient-warm-mid: #f0fdfa;
-    --bg-warm: #f5fffe;
-    --table-header: #e0f7fa;
-    --table-total: #f0fdfa;
-    --shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    --surface-soft: #FDF8F3;
+    --surface-tint: #F5EBE0;      /* Warm beige */
+    --surface-muted: #FAF5EF;
+    --border: #E8DDD4;            /* Light mocha border */
+    --border-strong: #3D2B1F;     /* Dark coffee border */
+    --text-subtle: #8B7355;       /* Muted coffee */
+    --text-highlight: #FDF8F3;
+    --accent-soft: #E8DDD4;       /* Soft mocha */
+    --accent-rose: #F5EBE0;
+    --gradient-rose: #F5EBE0;
+    --gradient-gold: #EDE0D4;     /* Warm cream gradient */
+    --gradient-warm-start: #FDF8F3;
+    --gradient-warm-mid: #F5EBE0;
+    --bg-warm: #FDF8F3;
+    --table-header: #F5EBE0;
+    --table-total: #FDF8F3;
+    --shadow: 0 12px 35px rgba(44, 24, 16, 0.1);
 }
 
 body {
