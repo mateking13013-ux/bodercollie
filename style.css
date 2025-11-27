@@ -663,7 +663,8 @@ body {
 }
 
 .field select {
-    min-height: 50px;
+    height: 54px;
+    min-height: 54px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -671,6 +672,12 @@ body {
     background-repeat: no-repeat;
     background-position: right 16px center;
     padding-right: 40px;
+    line-height: 1.4;
+    color: #374151;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
 }
 
 .field input:focus,
