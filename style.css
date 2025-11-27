@@ -652,7 +652,10 @@ body {
 
 .field input,
 .field textarea,
-.field select {
+.field select,
+.contact-form-page input,
+.contact-form-page textarea,
+.contact-form-page select {
     width: 100%;
     padding: 14px 16px;
     border-radius: 8px;
@@ -660,9 +663,11 @@ body {
     font-size: 16px;
     transition: border-color 0.2s ease;
     background-color: #fff;
+    box-sizing: border-box;
 }
 
-.field select {
+.field select,
+.contact-form-page select {
     height: 54px;
     min-height: 54px;
     -webkit-appearance: none;
@@ -674,7 +679,6 @@ body {
     padding-right: 40px;
     line-height: 1.4;
     color: #374151;
-    box-sizing: border-box;
     -webkit-box-sizing: border-box;
     font-weight: 400;
     -webkit-text-size-adjust: 100%;
