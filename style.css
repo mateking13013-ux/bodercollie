@@ -651,36 +651,22 @@ body {
 }
 
 .field input,
-.field textarea {
+.field textarea,
+.field select {
     width: 100%;
     padding: 12px;
     border-radius: 8px;
     border: 1px solid #d1d5db;
     font-size: 16px;
     transition: border-color 0.2s ease;
+    background-color: #fff;
 }
 
 .field input:focus,
-.field textarea:focus {
+.field textarea:focus,
+.field select:focus {
     outline: none;
     border-color: var(--primary);
-}
-
-.puppy-checkboxes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 16px;
-    color: var(--muted);
-    font-weight: 600;
-}
-
-.puppy-checkboxes label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex: 0 0 auto;
-    min-width: fit-content;
-    -webkit-flex: 0 0 auto;
 }
 
 .full-width {
