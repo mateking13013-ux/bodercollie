@@ -691,6 +691,12 @@ body {
     border-color: var(--primary);
 }
 
+.puppy-names {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+}
+
 .full-width {
     width: 100%;
     text-align: center;
