@@ -675,9 +675,12 @@ body {
 }
 
 .puppy-checkboxes label {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 8px;
+    flex: 0 0 auto;
+    min-width: fit-content;
+    -webkit-flex: 0 0 auto;
 }
 
 .full-width {
