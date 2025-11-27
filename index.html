@@ -549,18 +549,11 @@
                             <span>Message</span>
                             <textarea name="message" rows="4" placeholder="Share any details or questions"></textarea>
                         </label>
-                        <div class="field">
-                            <span>Select Puppy Interested In <b>*</b></span>
-                            <div class="puppy-checkboxes">
-                                <label><input type="checkbox" name="puppy" value="Cooper"> Cooper</label>
-                                <label><input type="checkbox" name="puppy" value="Finn"> Finn</label>
-                                <label><input type="checkbox" name="puppy" value="Jasper"> Jasper</label>
-                                <label><input type="checkbox" name="puppy" value="Rusty"> Rusty</label>
-                                <label><input type="checkbox" name="puppy" value="Coco"> Coco</label>
-                                <label><input type="checkbox" name="puppy" value="Pepper"> Pepper</label>
-                                <label><input type="checkbox" name="puppy" value="Willow"> Willow</label>
-                            </div>
-                        </div>
+                        <label class="field">
+                            <span>Puppy Interested In <b>*</b></span>
+                            <input type="text" name="puppy" placeholder="Type puppy name" required>
+                            <span class="puppy-names">Available: Cooper, Finn, Jasper, Rusty, Coco, Pepper, Willow</span>
+                        </label>
                         <button type="submit" class="btn-primary full-width">Submit Form</button>
                         <div class="form-message form-status" aria-live="polite"></div>
                     </form>
